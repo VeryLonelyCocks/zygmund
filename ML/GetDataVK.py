@@ -66,9 +66,9 @@ class DataVKGroup:
 
         cities_data = self._api.database.getCitiesById(city_ids=cities)
 
-        cities_list = {}
+        cities_list = []
         for cityData in cities_data:
-            cities_list[cityData['cid']] = cityData['name']
+            cities_list.append({'id': cityData['cid'], 'name': cityData['name']})
 
         print('Got cities')
 
@@ -88,9 +88,9 @@ class DataVKGroup:
 
         countries_data = self._api.database.getCountriesById(country_ids=countries)
 
-        countries_list = {}
+        countries_list = []
         for countryData in countries_data:
-            countries_list[countryData['cid']] = countryData['name']
+            countries_list.append({'id': countryData['cid'], 'name': countryData['name']})
 
         print('Got countries')
 

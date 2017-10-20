@@ -31,9 +31,9 @@ class AfishaParser:
 
 class Companies(AfishaParser):
     """
-        Usage:
-        parser = Companies(Companies.MAPPING['museum'], 'samara')
-        data = parser.parse()
+    Usage:
+    parser = Companies(Companies.MAPPING['museum'], 'samara')
+    data = parser.parse()
     """
 
     MAPPING = {

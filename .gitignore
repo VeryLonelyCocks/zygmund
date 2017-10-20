@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# PyCharm workspace
+.idea/
+
+# ML data sample
+samples/
